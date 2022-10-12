@@ -1,0 +1,16 @@
+homebrew_repos_default:
+  - go-task/tap
+
+homebrew_casks_default:
+  - 1password
+  - docker
+  - google-chrome
+  - iterm2
+  - visual-studio-code
+  - zoom
+
+homebrew_packages_default:
+  - go-task
+  - kubectx
+  - kubernetes-cli
+  - kubernetes-helm

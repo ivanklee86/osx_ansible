@@ -1,0 +1,46 @@
+- name: Install Homebrew.
+  include_role:
+    name: geerlingguy.mac.homebrew
+
+- name: Make sure Homebrew bin is in path.
+  ansible.builtin.lineinfile:
+    path: /etc/paths
+    state: present
+    line: '/opt/homebrew/bin'
+  become: true
+  become_user: root
+
+- name: Add default Homebrew repos
+  community.general.homebrew_tap:
+    name: "{{ homebrew_repos_default }}"
+
+- name: Add Homebrew repos
+  community.general.homebrew_tap:
+    name: "{{ homebrew_repos_default }}"
+  when: type != 'bootstrap'
+
+- name: Add default Homebrew casks
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: yes
+  loop: "{{ homebrew_casks_default }}"
+
+- name: Add Homebrew casks
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: yes
+  loop: "{{ homebrew_casks }}"
+  when: type != 'bootstrap'
+
+- name: Add default Homebrew packages
+  community.general.homebrew:
+    name: "{{ homebrew_packages_default }}"
+    state: present
+    update_homebrew: yes
+
+- name: Add Homebrew packages
+  community.general.homebrew:
+    name: "{{ homebrew_packages }}"
+    state: present
+    update_homebrew: yes
+  when: type != 'bootstrap'
