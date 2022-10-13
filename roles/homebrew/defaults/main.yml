@@ -1,8 +1,10 @@
 homebrew_repos_default:
   - go-task/tap
+  - 1password/tap
 
 homebrew_casks_default:
   - 1password
+  - 1password-cli
   - docker
   - google-chrome
   - iterm2
@@ -14,3 +16,4 @@ homebrew_packages_default:
   - kubectx
   - kubernetes-cli
   - kubernetes-helm
+  - mas

@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  update-ansible:
+    cmds:
+      - ansible-galaxy install -r requirements.yaml
+
+  playbook:
+    cmds:
+      - ansible-playbook -i "localhost," -c local -e "type={{.CLI_ARGS}}" osx_ansible.yml --ask-become-pass
+  

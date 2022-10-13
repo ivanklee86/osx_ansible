@@ -1,0 +1,7 @@
+- name: Install default apps from Mac App Store
+  shell: mas install {{ item }}
+  loop: "{{ appstore_default }}"
+
+- name: Install apps from Mac App Store
+  shell: mas install {{ item }}
+  loop: "{{ appstore }}"

@@ -4,3 +4,6 @@ collections:
     type: git
     version: main
   - name: geerlingguy.mac
+
+roles:
+  - name: gantsign.oh-my-zsh
