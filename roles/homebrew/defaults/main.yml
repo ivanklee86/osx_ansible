@@ -5,15 +5,25 @@ homebrew_repos_default:
 homebrew_casks_default:
   - 1password
   - 1password-cli
+  - discord
   - docker
+  - datagrip
+  - goland
   - google-chrome
   - iterm2
+  - jetbrains-toolbox
+  - pycharm
+  - slack
   - visual-studio-code
   - zoom
 
 homebrew_packages_default:
+  - goenv
   - go-task
   - kubectx
   - kubernetes-cli
   - kubernetes-helm
   - mas
+  - nvm
+  - packer
+  - tfenv

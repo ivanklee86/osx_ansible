@@ -15,4 +15,5 @@ Note: If you haven't installed command line developer tools, running Ansible may
 
 ## Running scripts 🚀
 1. Run `bootstrap.sh` to install Python 3, pip, and ansible.
-2. Run `apply.sh` to apply Ansible for first time.
+2. Run `apply.sh [TYPE]` to apply Ansible for first time.
+3. After that, you can use [task](https://taskfile.dev/).

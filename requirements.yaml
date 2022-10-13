@@ -7,3 +7,4 @@ collections:
 
 roles:
   - name: gantsign.oh-my-zsh
+  - name: markosamuli.pyenv

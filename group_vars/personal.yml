@@ -18,3 +18,34 @@ users:
       theme: robbyrussell
       plugins:
         - git
+
+# pyenv
+pyenv_python38_version: "3.8.14"
+pyenv_python39_version: "3.9.14"
+pyenv_python310_version: "3.10.7"
+pyenv_python_versions:
+  - "{{ pyenv_python38_version }}"
+  - "{{ pyenv_python39_version }}"
+  - "{{ pyenv_python310_version }}"
+pyenv_global: "{{ pyenv_python310_version}} system"
+pyenv_virtualenvwrapper: true
+pyenv_virtualenvwrapper: true
+pyenv_virtualenvwrapper_home: "{{ ansible_env.HOME }}/.virtualenvs"
+pyenv_install_from_package_manager: true
+
+# Taskbar configuration
+dockitems_remove:
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - TV
+  - Music
+  - Podcasts
+  - News
