@@ -1,7 +1,9 @@
 # homebrew
-homebrew_repos: []
+homebrew_repos:
+  - k0sproject/tap
 homebrew_casks: []
-homebrew_packages: []
+homebrew_packages:
+  - k0sctl
 
 # appstore
 appstore: []
