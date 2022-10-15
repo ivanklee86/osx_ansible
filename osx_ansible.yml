@@ -8,3 +8,4 @@
     - geerlingguy.mac.dock
     - appstore
     - role: markosamuli.pyenv
+    - role: gantsign.visual-studio-code

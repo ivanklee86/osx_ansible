@@ -6,18 +6,22 @@ homebrew_packages: []
 # appstore
 appstore: []
 
-# oh-my-zsh configuration
-oh_my_zsh_install: yes
-oh_my_zsh_theme: robbyrussell
-oh_my_zsh_plugins:
-  - git
-
+# Users
 users:
   - username: ivan
     oh_my_zsh:
       theme: robbyrussell
       plugins:
         - git
+    visual_studio_code_extensions:
+      - wholroyd.jinja
+      - ms-python.python
+
+# oh-my-zsh configuration
+oh_my_zsh_install: yes
+oh_my_zsh_theme: robbyrussell
+oh_my_zsh_plugins:
+  - git
 
 # pyenv
 pyenv_python38_version: "3.8.14"
@@ -49,3 +53,6 @@ dockitems_remove:
   - Music
   - Podcasts
   - News
+
+# VSCode
+visual_studio_code_skip_add_repo: yes
