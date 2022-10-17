@@ -9,3 +9,4 @@ roles:
   - name: gantsign.oh-my-zsh
   - name: markosamuli.pyenv
   - name: gantsign.visual-studio-code
+  - name: geerlingguy.dotfiles

@@ -1,6 +1,7 @@
 homebrew_repos_default:
   - go-task/tap
   - 1password/tap
+  - kwilczynski/homebrew-pkenv
 
 homebrew_casks_default:
   - 1password
@@ -26,5 +27,5 @@ homebrew_packages_default:
   - kubernetes-helm
   - mas
   - nvm
-  - packer
+  - pkenv
   - tfenv

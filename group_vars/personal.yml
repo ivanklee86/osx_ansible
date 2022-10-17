@@ -58,3 +58,15 @@ dockitems_remove:
 
 # VSCode
 visual_studio_code_skip_add_repo: yes
+
+# Dotfiles
+dotfiles_repo: "https://github.com/ivanklee86/dotfiles.git"
+dotfiles_repo_version: main
+dotfiles_files:
+  - .zsh_basic
+  - .zsh_{{ type }}
+
+# zshrc_sources
+zshrc_sources:
+  - .zsh_basic
+  - .zsh_{{ type }}

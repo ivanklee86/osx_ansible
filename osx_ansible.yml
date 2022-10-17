@@ -5,7 +5,14 @@
   roles:
     - homebrew
     - role: gantsign.oh-my-zsh
-    - geerlingguy.mac.dock
+    - role: geerlingguy.mac.dock
     - appstore
     - role: markosamuli.pyenv
     - role: gantsign.visual-studio-code
+    - role: geerlingguy.dotfiles
+  tasks:
+    - name: Set up alias files .
+      lineinfile:
+        path: ~/.zshrc
+        line: "source ~/{{ item }}"
+      loop: "{{ zshrc_sources }}"
