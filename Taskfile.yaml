@@ -12,4 +12,4 @@ tasks:
 
   playbook:
     cmds:
-      - ansible-playbook -i "localhost," -c local -e "type={{.CLI_ARGS}}" osx_ansible.yml --ask-become-pass
+      - ansible-playbook -i "localhost," -c local -e "type={{.CLI_ARGS}}" osx_ansible.yml
